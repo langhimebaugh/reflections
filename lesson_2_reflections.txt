@@ -1,3 +1,7 @@
-What happens when you initialize a repository? Why do you need to do it?
+1) What happens when you initialize a repository? Why do you need to do it?
 
 it makes the directory compatible and trackable by git.  Required to make commits.  Will create a hidden .git folder to track changes.
+
+2) How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area is where you can place multiple files before issuing a commit command.  It allows the commit statement to remain simple with only the comment argument vs having 20 file names as arguments (if you added or modified 20 files in one logical change)
