@@ -1,0 +1,3 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+it makes the directory compatible and trackable by git.  Required to make commits.  Will create a hidden .git folder to track changes.
