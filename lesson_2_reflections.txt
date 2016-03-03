@@ -5,3 +5,41 @@ it makes the directory compatible and trackable by git.  Required to make commit
 2) How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 Staging area is where you can place multiple files before issuing a commit command.  It allows the commit statement to remain simple with only the comment argument vs having 20 file names as arguments (if you added or modified 20 files in one logical change)
+
+3) How can you use the staging area to make sure you have one commit per logical change?
+
+place modified files related to one logical change in staging area then commit
+
+4) What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Examples are program in another language or an experimental option.  Master Branch for Production quality.  Development Branch for active work.  Experimental Branch or Unique Feature Branch.  Allows to switch back and forth if board.
+
+5) How do the diagrams help you visualize the branch structure?
+
+Helps to see how the commits and branches relate to each other and see any dangling commits outside all branches.  Can help when merging features developed independently from another branch.
+
+6) What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The coins branch is merged into the master branch while keeping all commits and removing the label coins.  It is represented to show how it was developed seperately.
+
+*   fa412fc Merge branch 'coins'
+|\
+| * 354dfdd Make ships able to spawn on coins
+| * 0c6daf1 Make it possible to collect coins
+| * a3c0ae4 Create helper functions
+| * 656b02e First pass at adding coins
+* | cf715a9 Add delay back to bullets
+* | 3884eab Add color
+* | 3e42136 now using requestAnimationFrame
+* | 4035769 frame interval was set wrong after game was paused
+* | 25ede83 a couple missing ends with the ipad version
+* | df03538 I can't spell 'screen' apparently :)
+|/
+* b0678b1 Revert controls
+* f19cb1b Fix typo in space
+
+7) What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+The pros are that it is fast and much easier than manual.  Automatic merges may not work 100% of the time.  There are possibilities of conflict in code when changes made to same lines of code in different branches.  If code changes made by 2 or more people may require discussing code with them.
+
+
